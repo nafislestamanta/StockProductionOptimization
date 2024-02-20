@@ -44,7 +44,7 @@
 
     function confirmAlert(title, text, icon, btnYes, btnNo) {
         return Swal.fire({
-            position: "top-end",
+            // position: "top-end",
             title: title,
             text: text,
             icon: icon,
