@@ -17,7 +17,7 @@
                                          <input type="text" id="product_name" class="form-control" name="product_name" placeholder="Nama Produk">
                                      </div>
                                  </div>
-                                 <div class="col-12">
+                                 <!-- <div class="col-12">
                                      <div class="form-group">
                                          <label for="production_limit">Batas Jumlah Produksi</label>
                                          <div class="input-group mb-3">
@@ -52,7 +52,7 @@
                                          <input type="number" id="product_profit" class="form-control" name="product_profit" placeholder="Laba Produk">
                                          </div>
                                      </div>
-                                 </div>
+                                 </div> -->
                                  <div class="col-12 d-flex justify-content-end">
                                      <button onclick="save()" type="submit" class="btn btn-primary me-1 mb-1">Submit</button>
                                      <a href="<?= base_url('Product') ?>" class="btn btn-light-secondary me-1 mb-1">Cancel</a>

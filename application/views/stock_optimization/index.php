@@ -8,14 +8,14 @@
         <div class="page-title">
             <div class="row">
                 <div class="col-12 col-md-6 order-md-1 order-last">
-                    <h3>Produk</h3>
-                    <p class="text-subtitle text-muted">Master</p>
+                    <h3>Optimasi Stok Produksi</h3>
+                    <p class="text-subtitle text-muted">Menu Utama</p>
                 </div>
                 <div class="col-12 col-md-6 order-md-2 order-first">
                     <nav aria-label="breadcrumb" class="breadcrumb-header float-start float-lg-end">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="<?= base_url('Dashboard') ?>">Dashboard</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Produk</li>
+                            <li class="breadcrumb-item active" aria-current="page">Optimasi Stok Produksi</li>
                         </ol>
                     </nav>
                 </div>
@@ -25,7 +25,7 @@
         <section class="section">
             <div class="card">
                 <div class="card-header">
-                <a href="<?= base_url('Product/create') ?>" class="btn icon icon-left btn-primary"><i class="fa-regular fa-square-plus"></i> Tambah Produk</a>
+                <a href="<?= base_url('StockOptimization/create') ?>" class="btn icon icon-left btn-primary"><i class="fa-regular fa-square-plus"></i> Tambah Optimasi Stok</a>
                 </div>
                 <div class="card-body">
                     <div class="table-responsive">
@@ -34,10 +34,10 @@
                                 <tr>
                                     <th>No</th>
                                     <th>Nama Produk</th>
-                                    <!-- <th>Batas Jumlah Produksi</th>
+                                    <th>Batas Jumlah Produksi</th>
                                     <th>Batas Waktu Pengerjaan</th>
                                     <th>Batas Tenaga Kerja</th>
-                                    <th>Laba</th> -->
+                                    <th>Laba</th>
                                     <th>Action</th>
                                 </tr>
                             </thead>

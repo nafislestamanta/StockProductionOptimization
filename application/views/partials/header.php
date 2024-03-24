@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard - Mazer Admin Dashboard</title>
+    <title><?= $title ?></title>
 
 
 
@@ -26,6 +26,9 @@
 
     <!-- Sweet Alert  -->
     <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.min.css" rel="stylesheet">
+
+    <!-- Select2 -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
 
     <link rel="stylesheet" href="<?= base_url('assets/compiled/css/app.css') ?>">
     <link rel="stylesheet" href="<?= base_url('assets/compiled/css/app-dark.css') ?>">

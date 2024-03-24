@@ -28,7 +28,8 @@ class Product extends CI_Controller
 
 	public function index()
 	{
-		$this->load->view('partials/header');
+		$data['title'] = 'Produk';
+		$this->load->view('partials/header', $data);
 		$this->load->view('partials/sidebar');
 		$this->load->view('master/product/index');
 		$this->load->view('partials/footer');
@@ -37,7 +38,8 @@ class Product extends CI_Controller
 
 	public function create()
 	{
-		$this->load->view('partials/header');
+		$data['title'] = 'Produk';
+		$this->load->view('partials/header', $data);
 		$this->load->view('partials/sidebar');
 		$this->load->view('master/product/form');
 		$this->load->view('partials/footer');
@@ -58,7 +60,8 @@ class Product extends CI_Controller
 
 	public function edit()
 	{
-		$this->load->view('partials/header');
+		$data['title'] = 'Produk';
+		$this->load->view('partials/header', $data);
 		$this->load->view('partials/sidebar');
 		$this->load->view('master/product/form');
 		$this->load->view('partials/footer');
@@ -68,14 +71,15 @@ class Product extends CI_Controller
 	public function save()
 	{
 		$product_name = $this->input->post('product_name');
-		$production_limit = $this->input->post('production_limit');
-		$work_deadline = $this->input->post('work_deadline');
-		$labor_limit = $this->input->post('labor_limit');
-		$product_profit = $this->input->post('product_profit');
+		// $production_limit = $this->input->post('production_limit');
+		// $work_deadline = $this->input->post('work_deadline');
+		// $labor_limit = $this->input->post('labor_limit');
+		// $product_profit = $this->input->post('product_profit');
 		$id_product = $this->input->post('id_product');
 		$mode = $this->input->post('mode');
 
-		echo json_encode($this->M_Product->saveProduct($product_name, $production_limit, $work_deadline, $labor_limit, $product_profit, $id_product, $mode));
+		// , $production_limit, $work_deadline, $labor_limit, $product_profit
+		echo json_encode($this->M_Product->saveProduct($product_name, $id_product, $mode));
 	}
 
 	public function deleteData()

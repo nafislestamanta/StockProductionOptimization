@@ -62,17 +62,17 @@ $url = $this->uri->segment(1);
                     </a>
                 </li>
 
-                <li class="sidebar-item <?= $url == 'Recipe' ? 'active' : '' ?>">
+                <!-- <li class="sidebar-item <?= $url == 'Recipe' ? 'active' : '' ?>">
                     <a href="<?= base_url('Recipe') ?>" class='sidebar-link'>
                         <i class="bi bi-file-earmark-medical-fill"></i>
                         <span>Resep</span>
                     </a>
-                </li>
+                </li> -->
 
                 <li class="sidebar-title">Menu Utama</li>
 
-                <li class="sidebar-item">
-                    <a href="form-layout.html" class='sidebar-link'>
+                <li class="sidebar-item <?= $url == 'StockOptimization' ? 'active' : '' ?>">
+                    <a href="<?= base_url('StockOptimization') ?>" class='sidebar-link'>
                         <i class="bi bi-file-earmark-medical-fill"></i>
                         <span>Optimasi Stok Produksi</span>
                     </a>

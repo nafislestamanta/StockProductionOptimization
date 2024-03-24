@@ -3,10 +3,10 @@
         <div class="float-start">
             <p>2024 &copy; Polije</p>
         </div>
-        <div class="float-end">
+        <!-- <div class="float-end">
             <p>Crafted with <span class="text-danger"><i class="bi bi-heart-fill icon-mid"></i></span>
                 by <a href="https://saugi.me">Claudio</a></p>
-        </div>
+        </div> -->
     </div>
 </footer>
 </div>
@@ -31,6 +31,9 @@
 
 <!-- Toastr -->
 <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+
+<!-- Select -->
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
 <script>
     function showNotification(type, msg, desc) {

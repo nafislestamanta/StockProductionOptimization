@@ -35,6 +35,13 @@ class M_Material extends CI_Model
         }
     }
 
+    public function getCountMaterial()
+    {
+        $query = $this->db->query("SELECT COUNT(id_bahan) as jumlah FROM bahan");
+
+        return $query->row_array();
+    }
+
     public function deleteData($material_id)
     {
         $this->db->where('id_bahan', $material_id);

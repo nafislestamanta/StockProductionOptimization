@@ -28,7 +28,8 @@ class Material extends CI_Controller
 
 	public function index()
 	{
-		$this->load->view('partials/header');
+		$data['title'] = 'Bahan';
+		$this->load->view('partials/header', $data);
 		$this->load->view('partials/sidebar');
 		$this->load->view('master/material/index');
 		$this->load->view('partials/footer');
@@ -37,7 +38,8 @@ class Material extends CI_Controller
 
 	public function create()
 	{
-		$this->load->view('partials/header');
+		$data['title'] = 'Bahan';
+		$this->load->view('partials/header', $data);
 		$this->load->view('partials/sidebar');
 		$this->load->view('master/material/form');
 		$this->load->view('partials/footer');
@@ -46,7 +48,8 @@ class Material extends CI_Controller
 
 	public function edit()
 	{
-		$this->load->view('partials/header');
+		$data['title'] = 'Bahan';
+		$this->load->view('partials/header', $data);
 		$this->load->view('partials/sidebar');
 		$this->load->view('master/material/form');
 		$this->load->view('partials/footer');
